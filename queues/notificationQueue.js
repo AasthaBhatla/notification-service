@@ -1,7 +1,7 @@
 const { Queue } = require('bullmq');
 const { Redis } = require('ioredis');
 
-const connection = new Redis(process.env.REDIS_URL);
+const connection = new Redis();
 
 const notificationQueue = new Queue('notificationQueue', { connection });
 
