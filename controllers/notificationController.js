@@ -7,18 +7,17 @@ exports.sendNotification = async (req, res) => {
     try {
         const notification = new Notification({ userId, type, message });
         await notification.save();
-
-        // Add job with retry options
+        
         await notificationQueue.add('send', {
             notificationId: notification._id,
             userId,
             type,
             message
         }, {
-            attempts: 5, // Retry up to 5 times on failure
+            attempts: 5, 
             backoff: {
-                type: 'exponential', // Exponential backoff
-                delay: 1000 // Initial delay of 1 second
+                type: 'exponential', 
+                delay: 1000 
             }
         });
 
