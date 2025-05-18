@@ -52,33 +52,5 @@ Responses
         "status": "pending",
         "createdAt": "2025-05-17T21:51:47.653Z",
         "__v": 0
-    },
-    {
-        "_id": "68290568e6222541491896f7",
-        "userId": "user123",
-        "type": "email",
-        "message": "Hello from notification service!",
-        "status": "pending",
-        "createdAt": "2025-05-17T21:53:44.759Z",
-        "__v": 0
-    },
-    {
-        "_id": "6829dd45e1210c10fb5ffae8",
-        "userId": "user123",
-        "type": "email",
-        "message": "Hello from notification service!",
-        "status": "pending",
-        "createdAt": "2025-05-18T13:14:45.440Z",
-        "__v": 0
-    },
-    {
-        "_id": "6829e9e9f8f92e4654716616",
-        "userId": "user123",
-        "type": "email",
-        "message": "Hello from notification service!",
-        "status": "pending",
-        "createdAt": "2025-05-18T14:08:41.961Z",
-        "__v": 0
     }
-
 
