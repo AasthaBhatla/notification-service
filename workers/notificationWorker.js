@@ -18,7 +18,7 @@ const worker = new Worker(
       console.log(`Notification ${notificationId} processed successfully.`);
     } catch (err) {
       console.error(`Error processing notification ${notificationId}:`, err);
-      throw err; // IMPORTANT: triggers retry
+      throw err; 
     }
   },
   { connection }
