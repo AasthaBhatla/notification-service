@@ -1,4 +1,3 @@
-// utils/retrySender.js
 const { sendEmail, sendSMS, sendInApp } = require('./senders');
 
 async function retrySend(type, userId, message, maxRetries = 3) {

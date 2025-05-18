@@ -3,9 +3,8 @@ const IORedis = require('ioredis');
 const Notification = require('../models/Notification');
 const retrySend = require('../utils/retrySender');
 
-// Fix: configure Redis with required options
 const connection = new IORedis({
-  maxRetriesPerRequest: null, // ⬅️ Required for BullMQ
+  maxRetriesPerRequest: null,
 });
 
 const worker = new Worker(
